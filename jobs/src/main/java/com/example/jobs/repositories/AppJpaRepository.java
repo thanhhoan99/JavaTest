@@ -1,0 +1,10 @@
+//package com.example.jobs.repositories;
+//
+//import com.example.jobs.entities.Application;
+//import org.springframework.data.jpa.repository.JpaRepository;
+//import org.springframework.stereotype.Repository;
+//
+//@Repository
+//public interface AppJpaRepository extends JpaRepository<Application, Integer> {
+//
+//}
