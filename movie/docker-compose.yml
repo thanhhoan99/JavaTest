@@ -3,7 +3,7 @@
 # It sets up a Spring Boot application with a MySQL database.
 services:
   app:
-    image: thanhhoan99/JavaTest-movie:latest
+    image: thanhhoan99/javatest-movie:latest
     ports:
       - '8080:8080'
     environment:
