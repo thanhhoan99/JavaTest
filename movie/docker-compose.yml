@@ -25,7 +25,8 @@ services:
       - '3307:3306'
     volumes:
       - db_data:/var/lib/mysql
-      - ./src/main/resources/data.sql:/docker-entrypoint-initdb.d/data.sql
+      - ./docker/init-sql/data.sql:/docker-entrypoint-initdb.d/data.sql
+
     healthcheck:
       # This healthcheck ensures that the MySQL service is ready before the app starts.
       test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost', '-u', 'root', '-p0908']
